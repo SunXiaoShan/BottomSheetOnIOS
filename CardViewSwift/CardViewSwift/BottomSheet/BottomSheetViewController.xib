@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomSheetViewController" customModule="CardViewSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="yDJ-pX-l1E" id="GNP-RL-nzq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="yDJ-pX-l1E">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqf-KC-pyw">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ma7-aV-zSc">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AFv-UG-c45">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvr-4e-vG9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6it-EP-dcF">
+                                                <rect key="frame" x="187" y="12" width="40" height="6"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="VI9-7I-l04"/>
+                                                    <constraint firstAttribute="height" constant="6" id="zPk-sh-khu"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="6it-EP-dcF" firstAttribute="centerY" secondItem="cvr-4e-vG9" secondAttribute="centerY" id="AiH-k7-fno"/>
+                                            <constraint firstAttribute="height" constant="30" id="EEC-gy-FJv"/>
+                                            <constraint firstItem="6it-EP-dcF" firstAttribute="centerX" secondItem="cvr-4e-vG9" secondAttribute="centerX" id="Mq3-MI-LU2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cvr-4e-vG9" firstAttribute="leading" secondItem="AFv-UG-c45" secondAttribute="leading" id="BVJ-id-xcc"/>
+                                    <constraint firstItem="cvr-4e-vG9" firstAttribute="top" secondItem="AFv-UG-c45" secondAttribute="top" id="NSA-Kd-fNk"/>
+                                    <constraint firstAttribute="trailing" secondItem="cvr-4e-vG9" secondAttribute="trailing" id="gCz-F7-GUf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <blurEffect style="regular"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer. masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </visualEffectView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YWO-Hj-41J">
+                            <rect key="frame" x="0.0" y="30" width="414" height="822"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="sectionIndexBackgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="YWO-Hj-41J" firstAttribute="leading" secondItem="Hqf-KC-pyw" secondAttribute="leading" id="2JS-Uw-S5j"/>
+                        <constraint firstAttribute="bottom" secondItem="YWO-Hj-41J" secondAttribute="bottom" id="6TL-Xv-kBz"/>
+                        <constraint firstItem="YWO-Hj-41J" firstAttribute="firstBaseline" secondItem="cvr-4e-vG9" secondAttribute="baseline" id="BAJ-Jj-9gC"/>
+                        <constraint firstAttribute="trailing" secondItem="Ma7-aV-zSc" secondAttribute="trailing" id="S3i-ks-ckS"/>
+                        <constraint firstItem="Ma7-aV-zSc" firstAttribute="top" secondItem="Hqf-KC-pyw" secondAttribute="top" id="d9l-S8-uQd"/>
+                        <constraint firstAttribute="bottom" secondItem="Ma7-aV-zSc" secondAttribute="bottom" id="oEh-PL-m9B"/>
+                        <constraint firstAttribute="trailing" secondItem="YWO-Hj-41J" secondAttribute="trailing" id="vXa-SA-tEf"/>
+                        <constraint firstItem="Ma7-aV-zSc" firstAttribute="leading" secondItem="Hqf-KC-pyw" secondAttribute="leading" id="wCD-x7-wP3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="-3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.29999999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hqf-KC-pyw" secondAttribute="trailing" id="E1F-nz-mWn"/>
+                <constraint firstItem="Hqf-KC-pyw" firstAttribute="leading" secondItem="yDJ-pX-l1E" secondAttribute="leading" id="L2k-Tx-xKK"/>
+                <constraint firstAttribute="bottom" secondItem="Hqf-KC-pyw" secondAttribute="bottom" id="Wjn-eY-7yH"/>
+                <constraint firstItem="Hqf-KC-pyw" firstAttribute="top" secondItem="yDJ-pX-l1E" secondAttribute="top" constant="44" id="WwP-X7-lK6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fmT-Y8-MGz"/>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+</document>
